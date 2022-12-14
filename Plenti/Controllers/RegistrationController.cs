@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using Plenti.Data;
-using Plenti.Entities;
-using Plenti.Services;
+using Plenti.Interfaces;
+using Plenti.Model;
 
 namespace Plenti.Controllers
 {
@@ -11,23 +10,25 @@ namespace Plenti.Controllers
     {
         
         private readonly ILogger<RegistrationController> _logger;
-        private readonly IUserMatcher _userMatcher;
-        private readonly PlentiDbContext _dbContext;
+        private readonly IUserRegistrationService _userRegistrationService;
 
-        public RegistrationController(ILogger<RegistrationController> logger, PlentiDbContext dbContext, IUserMatcher userMatcher)
+        public RegistrationController(ILogger<RegistrationController> logger, IUserRegistrationService userRegistrationService)
         {
             _logger = logger;
-            _userMatcher = userMatcher;
-            _dbContext = dbContext;
+            _userRegistrationService = userRegistrationService;
         }
 
-       
-        [HttpPost(Name = "Registration")]
-        public bool IsMatchingWithExistingMembers(User newUser)
+        [HttpPost("IsMatchingWithExistingMembers")]
+        public IActionResult IsMatchingWithExistingMembers([FromBody] User newUser)
         {
-            var a = _userMatcher.IsMatch(new User(), new User());
+            if (ModelState.IsValid)
+            {
+                var res = _userRegistrationService.IsMatchingWithExistingMembers(newUser);
 
-            return true;
+                return Ok(res);
+            }
+
+            return BadRequest(ModelState);
         }
     }
 }

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plenti", "Plenti\Plenti.csproj", "{F7F3A86F-2EB0-424B-80A2-449DF6A9A0BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plenti", "Plenti\Plenti.csproj", "{F7F3A86F-2EB0-424B-80A2-449DF6A9A0BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlentiTests", "PlentiTests\PlentiTests.csproj", "{A1F183C4-CFA2-4249-96F5-5EEB11D37EA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlentiTests", "PlentiTests\PlentiTests.csproj", "{F432F427-E565-46BA-844D-8C29A6C2A0B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{F7F3A86F-2EB0-424B-80A2-449DF6A9A0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7F3A86F-2EB0-424B-80A2-449DF6A9A0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7F3A86F-2EB0-424B-80A2-449DF6A9A0BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A1F183C4-CFA2-4249-96F5-5EEB11D37EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1F183C4-CFA2-4249-96F5-5EEB11D37EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1F183C4-CFA2-4249-96F5-5EEB11D37EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1F183C4-CFA2-4249-96F5-5EEB11D37EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F432F427-E565-46BA-844D-8C29A6C2A0B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F432F427-E565-46BA-844D-8C29A6C2A0B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F432F427-E565-46BA-844D-8C29A6C2A0B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F432F427-E565-46BA-844D-8C29A6C2A0B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

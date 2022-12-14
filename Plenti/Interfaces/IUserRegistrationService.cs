@@ -1,6 +1,6 @@
-﻿using Plenti.Entities;
+﻿using Plenti.Model;
 
-namespace Plenti.Services
+namespace Plenti.Interfaces
 {
     public interface IUserRegistrationService
     {
